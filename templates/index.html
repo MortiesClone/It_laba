@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" cotent="text/html; charset=utf-8">
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+			ymaps.ready(init);
+			var myMap;
+			function init(){
+				myMap = new ymaps.Map("map", {
+					center: [55.76, 37.64],
+					zoom: 7
+				});
+			}
+		</script>
+		<title>
+			Title
+		</title>
+	</head>
+	<body>
+		<div id="map" style="width: 1200px; height: 400px;" align="center"></div>
+	</body>
+</html>
