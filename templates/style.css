@@ -4,5 +4,7 @@ body{
 }
 table{
 	background: #339;
+	padding: 10px;
 	text-align: center;
+	box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
 }

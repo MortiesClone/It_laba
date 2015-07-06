@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta http-equiv="Content-Type" cotent="text/html; charset=utf-8">
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="styleForIndex.css">
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript">
 			ymaps.ready(init);
@@ -14,11 +14,19 @@
 				});
 			}
 		</script>
+		<script type="text/javascript" src="script.js"></script>
 		<title>
 			Title
 		</title>
+		<meta http-equiv="Content-Type" cotent="text/html; charset=utf-8">
 	</head>
 	<body>
-		<div id="map" style="width: 1200px; height: 400px;" align="center"></div>
+		<center>
+			<div id="map" style="width: 1000px; height: 400px;" align="center"></div>
+			<div id="vkladki">
+				<div class="vkl" id="vkladka1" onclick="chang('#vkladka1');">Vkladka1</div>
+				<div class="vkl" id="vkladka2" onclick="chang('#vkladka2');">Vkladka2</div>
+			</div>
+		</center>
 	</body>
 </html>
